@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Free Fire diamonds and membership packages at NAVIYA TOPUP."><title>Free Fire Top-ups | NAVIYA TOPUP</title><link rel="stylesheet" href="style.css">
+<style>
+.ff-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:25px}
+.ff-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ff-card{border:1px solid #dce5ef;border-radius:15px;padding:16px;background:#fff;box-shadow:0 6px 20px #102d5008;display:flex;flex-direction:column;min-height:220px}
+.ff-art{height:105px;border-radius:12px;background:linear-gradient(135deg,#eaf4ff,#f4f8fc);display:grid;place-items:center;font-size:46px;margin-bottom:13px}
+.ff-card h3{font-size:16px;line-height:1.4;margin:0 0 9px;min-height:45px}
+.ff-price{font-size:19px;font-weight:950;color:#2160e8;margin:0 0 14px}
+.ff-card .btn{margin-top:auto;width:100%;font-size:13px}
+.ff-label{display:inline-block;background:#edf4ff;color:#205be1;border-radius:30px;padding:5px 9px;font-size:10px;font-weight:900;margin-bottom:10px;width:max-content}
+@media(max-width:900px){.ff-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.ff-grid{grid-template-columns:repeat(2,1fr)}.ff-intro{align-items:flex-start;flex-direction:column}.ff-card{padding:12px}.ff-card h3{font-size:15px}.ff-price{font-size:17px}}
+@media(max-width:390px){.ff-grid{grid-template-columns:1fr 1fr;gap:10px}.ff-card h3{font-size:14px}}
+</style></head><body>
+<header class="header" id="header"><div class="wrap headin"><a class="logo" href="index.html"><span class="mark">N</span><span>NAVIYA <em>TOPUP</em></span></a><button class="menu" onclick="document.getElementById('header').classList.toggle('open')" aria-label="Menu">☰</button><nav><a href="index.html">Home</a><a href="catalog.html">Products</a><a href="freefire-info.html">FF Info Bot</a><a href="index.html#how">How It Works</a><a href="index.html#contact">Contact</a></nav><div class="head-actions"><a class="btn primary" href="checkout.html?category=Free%20Fire">Place Order</a></div></div></header>
+<section class="pagehero"><div class="wrap"><h1>🔥 Free Fire Top-ups</h1><p>Choose a membership or diamond package. Prices shown are the prices supplied in your reference screenshot.</p></div></section>
+<section class="section"><div class="wrap">
+<div class="notice">Please confirm current stock and price with NAVIYA TOPUP before paying. These prices are entered from your screenshot; they are not yet live-synced with FazerCards.</div>
+<div class="panel" id="verify-panel" style="margin-bottom:30px">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
+    <span class="mark" style="width:36px;height:36px;border-radius:11px;font-size:14px">1</span>
+    <div><h2 style="font-size:22px;margin:0">Verify Your Free Fire Player ID</h2><span class="hint">Enter your UID and verify it before selecting a package.</span></div>
+  </div>
+  <form id="verifyForm" class="formgrid">
+    <div class="field full"><label for="playerUid">Free Fire Player ID (UID) *</label><input id="playerUid" inputmode="numeric" autocomplete="off" required placeholder="Enter your Free Fire Player ID (UID)"></div>
+    <div class="field full" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <button class="btn primary" id="verifyBtn" type="submit">✓ Verify Player ID</button>
+      <span id="verifyStatus" class="hint" role="status">Player ID verification is required before ordering.</span>
+    </div>
+  </form>
+  <div id="verifiedPlayer" style="display:none;margin-top:14px;padding:14px;border-radius:12px;background:#e9f9f1;color:#08764e;font-weight:800;font-size:14px"></div>
+</div>
+
+<div class="ff-intro"><div><span class="kicker">MEMBERSHIPS</span><h2 style="margin:7px 0 0">Free Fire Membership Packages</h2></div><span class="hint">Currency: LKR (Rs.)</span></div>
+<div class="ff-grid">
+<article class="ff-card"><div class="ff-art">💎</div><span class="ff-label">MEMBERSHIP</span><h3>Weekly Lite Membership</h3><div class="ff-price">Rs. 130.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=Weekly%20Lite%20Membership">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎</div><span class="ff-label">MEMBERSHIP</span><h3>Weekly Membership</h3><div class="ff-price">Rs. 580.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=Weekly%20Membership">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">👑</div><span class="ff-label">MEMBERSHIP</span><h3>Monthly Membership</h3><div class="ff-price">Rs. 2,900.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=Monthly%20Membership">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">👑</div><span class="ff-label">MEMBERSHIP</span><h3>VIP Membership</h3><div class="ff-price">Rs. 3,480.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=VIP%20Membership">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">🏆</div><span class="ff-label">MEMBERSHIP</span><h3>Super VIP Membership</h3><div class="ff-price">Rs. 5,220.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=Super%20VIP%20Membership">Order this package</a></article>
+</div>
+<div style="margin:48px 0 20px"><span class="kicker">DIAMOND PACKAGES</span><h2 style="margin:7px 0 0">Free Fire Diamonds</h2></div>
+<div class="ff-grid">
+<article class="ff-card"><div class="ff-art">💎🎁</div><span class="ff-label">BONUS PACK · ONE TIME</span><h3>465 Diamonds Bonus Pack</h3><div class="ff-price">Rs. 1,180.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=465%20Diamonds%20Bonus%20Pack">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎🎁</div><span class="ff-label">BONUS PACK · ONE TIME</span><h3>780 Diamonds Bonus Pack</h3><div class="ff-price">Rs. 1,970.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=780%20Diamonds%20Bonus%20Pack">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎🎁</div><span class="ff-label">BONUS PACK · ONE TIME</span><h3>1,590 Diamonds Bonus Pack</h3><div class="ff-price">Rs. 3,960.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=1590%20Diamonds%20Bonus%20Pack">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎🎁</div><span class="ff-label">BONUS PACK · ONE TIME</span><h3>3,270 Diamonds Bonus Pack</h3><div class="ff-price">Rs. 7,980.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=3270%20Diamonds%20Bonus%20Pack">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎🎁</div><span class="ff-label">BONUS PACK · ONE TIME</span><h3>8,400 Diamonds Bonus Pack</h3><div class="ff-price">Rs. 19,880.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=8400%20Diamonds%20Bonus%20Pack">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎</div><span class="ff-label">DIAMONDS</span><h3>25 Diamonds</h3><div class="ff-price">Rs. 85.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=25%20Diamonds">Order this package</a></article>
+<article class="ff-card"><div class="ff-art">💎</div><span class="ff-label">DIAMONDS</span><h3>100 Diamonds</h3><div class="ff-price">Rs. 325.00</div><a class="btn primary package-order" aria-disabled="true" style="opacity:.45;pointer-events:none" href="checkout.html?category=Free%20Fire&product=100%20Diamonds">Order this package</a></article>
+</div>
+<div class="banner"><div><h3>Need another Free Fire package?</h3><p>Message us to check the latest supplier availability.</p></div><a class="btn light" href="https://wa.me/94755173946?text=Hi%20NAVIYA%20TOPUP%2C%20I%20need%20a%20Free%20Fire%20top-up." target="_blank" rel="noopener">CHAT ON WHATSAPP ↗</a></div>
+</div></section><footer><div class="wrap"><div class="copyright"><span>© 2026 NAVIYA TOPUP</span><a href="https://wa.me/94755173946">WhatsApp: +94 75 517 3946</a></div></div></footer><a class="chat" href="https://wa.me/94755173946" target="_blank" rel="noopener">◉</a>
+<script>const q=new URLSearchParams(location.search);if(q.get('product')){} </script>
+<script>
+let ffVerifiedUid = "";
+let ffVerifiedName = "";
+const verifyForm = document.getElementById("verifyForm");
+verifyForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const uid = document.getElementById("playerUid").value.trim();
+  const btn = document.getElementById("verifyBtn");
+  const status = document.getElementById("verifyStatus");
+  const result = document.getElementById("verifiedPlayer");
+  if (!/^[0-9]{5,20}$/.test(uid)) {
+    status.textContent = "Please enter a valid numeric Player UID.";
+    status.style.color = "#b42318";
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = "Verifying...";
+  status.textContent = "Checking your Player ID with FazerCards...";
+  status.style.color = "#66758d";
+  result.style.display = "none";
+  document.querySelectorAll(".package-order").forEach(a => {a.style.pointerEvents="none";a.style.opacity=".45";a.setAttribute("aria-disabled","true");});
+  try {
+    const response = await fetch("/api/freefire/validate-id", {
+      method: "POST", headers: {"Content-Type":"application/json"},
+      body: JSON.stringify({playerId: uid})
+    });
+    const data = await response.json();
+    if (!response.ok || !data.valid) throw new Error(data.message || data.error || "Player ID could not be verified.");
+    ffVerifiedUid = uid;
+    ffVerifiedName = data.playerName || "";
+    result.textContent = "✓ Verified" + (ffVerifiedName ? " — Player: " + ffVerifiedName : "") + " — UID: " + uid;
+    result.style.display = "block";
+    status.textContent = "Verification successful. You can now select a package.";
+    status.style.color = "#08764e";
+    document.querySelectorAll(".package-order").forEach(a => {
+      const url = new URL(a.href);
+      url.searchParams.set("playerId", ffVerifiedUid);
+      if (ffVerifiedName) url.searchParams.set("playerName", ffVerifiedName);
+      a.href = url.toString();
+      a.style.pointerEvents="auto";a.style.opacity="1";a.removeAttribute("aria-disabled");
+    });
+  } catch (err) {
+    status.textContent = err.message || "Verification service unavailable. Please try again later.";
+    status.style.color = "#b42318";
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "✓ Verify Player ID";
+  }
+});
+</script>
+</body></html>
